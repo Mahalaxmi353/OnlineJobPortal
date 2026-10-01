@@ -1,0 +1,789 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background: white;
+    width: 380px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.dashboard-menu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.dashboard-menu button {
+    width: auto;
+    padding: 10px 20px;
+}
+
+.job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.job-card h3 {
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    margin: 8px 0;
+}
+
+.apply-button {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.application-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.application-card {
+    background: #f8f9fa;
+}
+
+.application-card p {
+    margin: 10px 0;
+}
+
+
+/* ==================== AUTH PAGES ==================== */
+
+.auth-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+
+    background: #f2f4f7;
+}
+
+
+.auth-card {
+    width: 420px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.auth-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.auth-header h1 {
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+
+.auth-header p {
+    margin: 0;
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+.auth-card label {
+    display: block;
+
+    text-align: left;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+.auth-card input,
+.auth-card select {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.auth-card input:focus,
+.auth-card select:focus {
+    border-color: #007bff;
+}
+
+
+.auth-button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #007bff;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+
+.auth-button:hover {
+    background: #0056b3;
+}
+
+
+.form-message {
+    text-align: center;
+
+    font-weight: bold;
+
+    min-height: 20px;
+
+    margin: 15px 0;
+}
+
+
+.auth-footer {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+.auth-footer p {
+    margin: 10px 0 15px;
+}
+
+
+.auth-footer a {
+    color: #007bff;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================== RESPONSIVE AUTH ==================== */
+
+@media (max-width: 500px) {
+
+    .auth-card {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .auth-header h1 {
+        font-size: 25px;
+    }
+}
+
+/* ==================== DASHBOARD HEADER ==================== */
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+    margin-bottom: 5px;
+}
+
+.dashboard-header p {
+    margin: 0;
+
+    color: #666;
+}
+
+
+/* ==================== LOGOUT ==================== */
+
+.logout-button {
+    width: auto;
+
+    padding: 10px 20px;
+
+    background: #dc3545;
+}
+
+.logout-button:hover {
+    background: #b02a37;
+}
+
+
+/* ==================== SEARCH ==================== */
+
+.search-section {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.search-section input {
+    flex: 1;
+
+    margin-bottom: 0;
+}
+
+.search-section button {
+    width: auto;
+
+    padding: 10px 20px;
+}
+
+
+/* ==================== JOB CARD ==================== */
+
+.job-card {
+    border: 1px solid #ddd;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+.job-card:hover {
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.job-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+}
+
+.job-card p {
+    margin: 9px 0;
+
+    color: #555;
+}
+
+
+/* ==================== APPLY BUTTON ==================== */
+
+.apply-button {
+    width: auto;
+
+    padding: 10px 22px;
+
+    margin-top: 12px;
+
+    background: #007bff;
+}
+
+.apply-button:hover {
+    background: #0056b3;
+}
+
+
+/* ==================== APPLICATION CARD ==================== */
+
+.application-card {
+    border: 1px solid #ddd;
+
+    padding: 22px;
+
+    margin-bottom: 18px;
+
+    border-radius: 10px;
+
+    background: #f8f9fa;
+}
+
+.application-card h3 {
+    margin-bottom: 15px;
+}
+
+.application-card p {
+    margin: 9px 0;
+}
+
+
+/* ==================== RESPONSIVE DASHBOARD ==================== */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        width: 95%;
+
+        padding: 20px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .dashboard-menu {
+        flex-direction: column;
+    }
+
+    .dashboard-menu button {
+        width: 100%;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-section button {
+        width: 100%;
+    }
+}
+
+
+/* ==================== RECRUITER DASHBOARD ==================== */
+
+.welcome-box {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    background: #f8f9fa;
+}
+
+.welcome-box h3 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.welcome-box p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+.welcome-box .apply-button {
+    margin-top: 0;
+}
+
+
+/* ==================== RECRUITER JOB CARD ==================== */
+
+.job-card .apply-button {
+    margin-right: 8px;
+}
+
+
+/* ==================== APPLICANT CARD ==================== */
+
+.application-card {
+    transition: 0.2s;
+}
+
+.application-card:hover {
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.application-card select {
+    width: 100%;
+
+    padding: 11px;
+
+    margin-top: 8px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background: white;
+}
+
+
+/* ==================== RESPONSIVE RECRUITER ==================== */
+
+@media (max-width: 700px) {
+
+    .welcome-box {
+        padding: 35px 15px;
+    }
+
+    .application-card button {
+        width: 100%;
+
+        margin-top: 5px;
+    }
+}
+
+
+/* ==================== PROFESSIONAL JOB CARDS ==================== */
+
+.job-card {
+    position: relative;
+
+    border: 1px solid #e1e5e9;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+.job-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    margin: 9px 0;
+
+    line-height: 1.5;
+}
+
+.job-card strong {
+    color: #333;
+}
+
+
+/* ==================== SKILLS ==================== */
+
+.job-skills {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    margin-top: 5px;
+
+    background: #eef4ff;
+
+    color: #0056b3;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+
+/* ==================== SALARY ==================== */
+
+.job-salary {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-top: 12px;
+}
+
+
+/* ==================== APPLICATION STATUS ==================== */
+
+.status-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+.status-applied {
+    background: #e7f1ff;
+
+    color: #0069d9;
+}
+
+.status-shortlisted {
+    background: #fff3cd;
+
+    color: #856404;
+}
+
+.status-selected {
+    background: #d4edda;
+
+    color: #155724;
+}
+
+.status-rejected {
+    background: #f8d7da;
+
+    color: #721c24;
+}
+
+
+/* ==================== APPLICATION CARD ==================== */
+
+.application-card {
+    border: 1px solid #e1e5e9;
+
+    padding: 24px;
+
+    margin-bottom: 18px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.application-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.application-card p {
+    margin: 9px 0;
+}
+
+
+/* ==================== APPLICANT INFORMATION ==================== */
+
+.applicant-info {
+    padding: 15px;
+
+    margin-top: 15px;
+
+    background: #f8f9fa;
+
+    border-radius: 8px;
+}
+
+.applicant-info p {
+    margin: 7px 0;
+}
+
+
+/* ==================== DASHBOARD NAVIGATION ==================== */
+
+.dashboard-menu {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.dashboard-menu button {
+    width: auto;
+    padding: 11px 20px;
+}
+
+
+/* ==================== BUTTONS ==================== */
+
+.dashboard button {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dashboard button:hover {
+    transform: translateY(-1px);
+}
+
+
+/* ==================== MOBILE RESPONSIVE ==================== */
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .dashboard {
+        width: 100%;
+        margin: 0;
+        min-height: 100vh;
+        border-radius: 0;
+        padding: 20px 15px;
+    }
+
+    .dashboard-header {
+        align-items: flex-start;
+    }
+
+    .dashboard-header h1 {
+        font-size: 25px;
+    }
+
+    .dashboard-menu {
+        flex-direction: column;
+    }
+
+    .dashboard-menu button {
+        width: 100%;
+    }
+
+    .job-card,
+    .application-card {
+        padding: 18px;
+    }
+
+    .job-card h3,
+    .application-card h3 {
+        font-size: 19px;
+    }
+
+    .apply-button {
+        width: 100%;
+    }
+}
+

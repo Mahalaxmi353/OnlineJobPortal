@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Job Portal - Recruiter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Recruiter Dashboard</h1>
+
+                <p id="recruiterWelcome">
+                    Welcome!
+                </p>
+
+            </div>
+
+            <button
+                class="logout-button"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- MENU -->
+
+        <div class="dashboard-menu">
+
+            <button onclick="loadMyJobs()">
+                My Jobs
+            </button>
+
+            <button onclick="showPostJobForm()">
+                 Post Job
+            </button>
+
+        </div>
+
+
+        <!-- SECTION TITLE -->
+
+        <h2 id="sectionTitle">
+            Welcome Recruiter
+        </h2>
+
+
+        <!-- CONTENT -->
+
+        <div id="content">
+
+            <div class="welcome-box">
+
+                <h3>Welcome to Smart Job Portal!</h3>
+
+                <p>
+                    Manage your job postings and
+                    applications from here.
+                </p>
+
+                <button
+                    class="apply-button"
+                    onclick="loadMyJobs()">
+                    View My Jobs
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

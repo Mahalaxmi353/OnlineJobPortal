@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Job Portal - Candidate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>Candidate Dashboard</h1>
+
+                <p id="welcomeMessage">
+                    Welcome!
+                </p>
+            </div>
+
+            <button
+                class="logout-button"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="dashboard-menu">
+
+            <button onclick="loadJobs()">
+                 Browse Jobs
+            </button>
+
+            <button onclick="loadApplications()">
+                 My Applications
+            </button>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-section">
+
+            <input
+                type="text"
+                id="jobSearch"
+                placeholder="Search jobs by title..."
+            >
+
+            <button onclick="searchJobs()">
+                 Search
+            </button>
+
+            <button onclick="loadJobs()">
+                View All
+            </button>
+
+        </div>
+
+
+        <!-- SECTION TITLE -->
+
+        <h2 id="sectionTitle">
+            Available Jobs
+        </h2>
+
+
+        <!-- CONTENT -->
+
+        <div id="content">
+
+            <p>
+                Click "Browse Jobs" to see available opportunities.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
